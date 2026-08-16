@@ -48,7 +48,7 @@
 
 ## 📂 Структура проекта
 
-```python
+```bash
 ├── dags/                     # DAG-файлы Apache Airflow
 │   └── reviews_etl_dag.py    # Основной сценарий пайплайна
 ├── data/                     # Наборы данных
