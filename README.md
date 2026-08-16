@@ -28,7 +28,7 @@
 
 1.  **Extract** (Извлечение): 
     Система автоматически считывает исходные данные из CSV-файла. 
-    * [Скачать marketplace_reviews.csv](marketplace_reviews.csv)
+    * [Скачать marketplace_reviews.csv](data/raw/marketplace_reviews.csv)
 2.  **Transform** (Трансформация): 
     Очистка текста, нормализация форматов и расчет тональности.
 3.  **Load** (Загрузка):
