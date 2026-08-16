@@ -10,11 +10,9 @@ __pycache__/
 htmlcov/
 .tox/
 
-!data/raw/marketplace_reviews.csv
-data/raw/*
+
 data/processed/*
-!data/raw/.gitkeep
-!data/processed/.gitkeep
+
 
 *.db
 *.sqlite3
