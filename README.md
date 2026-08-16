@@ -28,7 +28,7 @@
 
 1.  **Extract** (Извлечение): 
     Система автоматически считывает исходные данные из CSV-файла. 
-    * [Скачать marketplace_reviews.csv](data/raw/marketplace_reviews.csv)
+    * [marketplace_reviews.csv](data/raw/marketplace_reviews.csv)
 2.  **Transform** (Трансформация): 
     Очистка текста, нормализация форматов и расчет тональности.
 3.  **Load** (Загрузка):
@@ -48,23 +48,28 @@
 
 ## 📂 Структура проекта
 
+## 📂 Структура проекта
+
 ```bash
-├── dags/                  # DAG-файлы Apache Airflow
-│   └── reviews_etl_dag.py # Основной сценарий пайплайна
-├── etl/                   # Модули с логикой этапов ETL
-│   ├── extract.py         # Извлечение данных
-│   ├── transform.py       # Очистка и преобразование
-│   └── load.py            # Загрузка в SQLite и агрегация
-├── tests/                 # Модульные тесты (pytest)
+├── dags/                     # DAG-файлы Apache Airflow
+│   └── reviews_etl_dag.py    # Основной сценарий пайплайна
+├── data/                     # Наборы данных
+│   └── raw/
+│       └── marketplace_reviews.csv
+├── etl/                      # Модули с логикой этапов ETL
+│   ├── extract.py            # Извлечение данных
+│   ├── transform.py          # Очистка и преобразование
+│   └── load.py               # Загрузка в SQLite и агрегация
+├── tests/                    # Модульные тесты (pytest)
 │   ├── test_extract.py
 │   ├── test_transform.py
 │   └── test_load.py
-├── docker-compose.yaml    # Конфигурация инфраструктуры (Airflow + PostgreSQL)
-├── pytest.ini             # Настройки для тестов
-├── requirements.txt       # Зависимости Python
-└── .env                   # Переменные окружения
+├── .gitignore                # Исключения для Git
+├── docker-compose.yaml       # Конфигурация инфраструктуры
+├── pytest.ini                # Настройки для тестов
+├── README.md                 # Документация проекта
+└── requirements.txt          # Зависимости Python
 ```
-
 
 ## 🚀 Инструкция по запуску
 
