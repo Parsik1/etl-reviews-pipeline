@@ -38,19 +38,17 @@
 ## 🛠 Технологический стек
 
 * **Язык программирования:** Python 3.12
-* **Обработка данных:** `pandas`, `pyarrow` (формат Parquet)
-* **Оркестрация:** Apache Airflow (LocalExecutor)
-* **Хранилище данных:** SQLite
-* **Контейнеризация:** Docker, Docker Compose
-* **Тестирование:** pytest
+* **Обработка данных:** `pandas`, `pyarrow`
+* **Оркестрация:** `Apache Airflow`
+* **Хранилище данных:** `SQLite`
+* **Контейнеризация:** `Docker`, `Docker Compose`
+* **Тестирование:** `pytest`
 
 ---
 
 ## 📂 Структура проекта
 
-## 📂 Структура проекта
-
-```bash
+```python
 ├── dags/                     # DAG-файлы Apache Airflow
 │   └── reviews_etl_dag.py    # Основной сценарий пайплайна
 ├── data/                     # Наборы данных
